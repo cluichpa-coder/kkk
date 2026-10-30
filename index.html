@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luichpa & Suraj</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <p class="eyebrow">A little love note, just for us</p>
+        <h1>Our story, written in the stars</h1>
+        <div class="sub">Luichpa <span aria-hidden="true">&hearts;</span> Suraj</div>
+        <p class="hero-note">To my favorite person, in every season and every lifetime.</p>
+    </header>
+
+    <main class="top-grid">
+        <article class="card">
+            <div class="small">The day my favorite girl was born</div>
+            <div id="birthday-count" class="countdown">-</div>
+            <div class="small">Next occurrence: <span id="birthday-next">-</span></div>
+        </article>
+
+        <article class="card">
+            <div class="small">Our next little celebration</div>
+            <div id="anniversary-count" class="countdown">-</div>
+            <div class="small">Next occurrence: <span id="anniversary-next">-</span></div>
+        </article>
+
+        <article class="card">
+            <div class="small">The day your favorite boy was born</div>
+            <div id="mybirthday-count" class="countdown">-</div>
+            <div class="small">Next occurrence: <span id="mybirthday-next">-</span></div>
+        </article>
+
+        <article class="card together">
+            <div class="small">Every day, a little more us</div>
+            <div id="together-days" class="big">0 days</div>
+            <div id="together-seconds" class="small accent">0 seconds</div>
+        </article>
+    </main>
+
+    <section class="memories" aria-labelledby="memories-title">
+        <div class="section-heading">
+            <p class="eyebrow">Little snapshots, forever memories</p>
+            <h2 id="memories-title">Our favorite moments</h2>
+            <p>Add your photos, then move them around to make this little corner yours.</p>
+        </div>
+        <div class="gallery-toolbar">
+            <label class="add-photos" for="photo-picker">Add our photos <span aria-hidden="true">+</span></label>
+            <input id="photo-picker" class="visually-hidden" type="file" accept="image/*" multiple>
+            <span class="gallery-hint">Drag photos to rearrange them</span>
+        </div>
+        <div id="photo-stage" class="photo-stage" aria-label="Moveable photo memories">
+            <div id="gallery-empty" class="gallery-empty">
+                <span class="empty-heart" aria-hidden="true">&hearts;</span>
+                <p>Our story looks lovely from here.</p>
+                <span>Choose a few photos to fill this space with us.</span>
+            </div>
+        </div>
+        <p id="gallery-status" class="gallery-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="love-note">
+        <p class="eyebrow">Always and in all ways</p>
+        <h2>My favorite place is with you</h2>
+        <p>Every ordinary day turns into something beautiful when I get to share it with you.</p>
+        <p>Thank you for being my safe place, my biggest smile, and the love I will choose in every lifetime. I love you more than all the words I could ever write.</p>
+        <div class="love-signoff">All my love, always <span aria-hidden="true">&hearts;</span></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
